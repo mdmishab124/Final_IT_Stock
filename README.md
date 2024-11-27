@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django Unfold Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        code, pre {
-            background: #f4f4f4;
-            border: 1px solid #ddd;
-            padding: 5px;
-            display: block;
-            border-radius: 5px;
-            margin: 10px 0;
-        }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        a {
-            color: #007acc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
+
 <body>
     <h1>Django Unfold Project</h1>
     <p>
