@@ -1,6 +1,6 @@
 
 <body>
-    <h1>Django Unfold Project</h1>
+    <h1>Django IT Stock Management System</h1>
     <p>
         A Django project leveraging <strong>Django Unfold</strong> for improved admin design and functionality. 
         This guide provides step-by-step instructions for setup, database configuration, and resolving static file issues.
