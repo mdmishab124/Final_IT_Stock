@@ -1,21 +1,62 @@
-<h1>IT Stock Management System</h1>
-A Django project leveraging Django Unfold for improved admin design and functionality. This guide provides step-by-step instructions for setup, database configuration, and resolving static file issues.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Unfold Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        code, pre {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 5px;
+            display: block;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Django Unfold Project</h1>
+    <p>
+        A Django project leveraging <strong>Django Unfold</strong> for improved admin design and functionality. 
+        This guide provides step-by-step instructions for setup, database configuration, and resolving static file issues.
+    </p>
 
-Installation and Setup
-Step 1: Install Required Dependencies
-To get started, install the following dependencies:
+    <div class="section">
+        <h2>Installation and Setup</h2>
 
-bash
-Copy code
-pip install django-unfold
+        <h3>Step 1: Install Required Dependencies</h3>
+        <p>To get started, install the following dependencies:</p>
+        <pre><code>pip install django-unfold
 pip install mysql-connector-python
 pip install mysqlclient
-Step 2: Configure the Database
-To use MySQL as your database, update the DATABASES settings in your settings.py file:
+        </code></pre>
 
-python
-Copy code
-DATABASES = {
+        <h3>Step 2: Configure the Database</h3>
+        <p>To use MySQL as your database, update the <code>DATABASES</code> settings in your <code>settings.py</code> file:</p>
+        <pre><code>DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'your_table_name',
@@ -23,39 +64,58 @@ DATABASES = {
         'PASSWORD': 'your_password',
         'HOST': 'yourhost.com',
     }
-}
-Step 3: Reset Migrations (if necessary)
-If there are existing migration files, delete them to avoid conflicts. Then, run the following commands to apply the database schema:
+}</code></pre>
 
-bash
-Copy code
-python manage.py makemigrations
+        <h3>Step 3: Reset Migrations (if necessary)</h3>
+        <p>If there are existing migration files, delete them to avoid conflicts. Then, run the following commands to apply the database schema:</p>
+        <pre><code>python manage.py makemigrations
 python manage.py migrate
-Static Files Configuration
-If the Unfold design is not displaying correctly, ensure your static files are configured properly in settings.py:
+        </code></pre>
+    </div>
 
-python
-Copy code
-STATIC_URL = '/static/'
-STATIC_ROOT = '/yourserverstaticpath/'
-Afterward, collect static files with the following command:
+    <div class="section">
+        <h2>Static Files Configuration</h2>
+        <p>
+            If the Unfold design is not displaying correctly, ensure your static files are configured properly in 
+            <code>settings.py</code>:
+        </p>
+        <pre><code>STATIC_URL = '/static/'
+STATIC_ROOT = '/yourserverstaticpath/'</code></pre>
 
-bash
-Copy code
-python manage.py collectstatic
-Usage
-Once all configurations are complete, you can start the development server and explore the Django Unfold design:
+        <p>Afterward, collect static files with the following command:</p>
+        <pre><code>python manage.py collectstatic</code></pre>
+    </div>
 
-bash
-Copy code
-python manage.py runserver
-Troubleshooting
-Unfold Design Not Showing
-Ensure static files are correctly configured and collected as outlined in the Static Files Configuration section.
+    <div class="section">
+        <h2>Usage</h2>
+        <p>Once all configurations are complete, you can start the development server and explore the Django Unfold design:</p>
+        <pre><code>python manage.py runserver</code></pre>
+    </div>
 
-Database Connection Issues
+    <div class="section">
+        <h2>Troubleshooting</h2>
+        <ul>
+            <li>
+                <strong>Unfold Design Not Showing:</strong> 
+                Ensure static files are correctly configured and collected as outlined in the 
+                <a href="#static-files-configuration">Static Files Configuration</a> section.
+            </li>
+            <li>
+                <strong>Database Connection Issues:</strong>
+                <ul>
+                    <li>Verify your MySQL credentials and host information in the <code>DATABASES</code> setting.</li>
+                    <li>Ensure the required MySQL libraries (<code>mysql-connector-python</code> and <code>mysqlclient</code>) are installed.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
-Verify your MySQL credentials and host information in the DATABASES setting.
-Ensure the required MySQL libraries (mysql-connector-python and mysqlclient) are installed.
-License
-This project is licensed under the MIT License. Feel free to use, modify, and distribute.
+    <div class="section">
+        <h2>License</h2>
+        <p>
+            This project is licensed under the <a href="LICENSE">MIT License</a>. 
+            Feel free to use, modify, and distribute.
+        </p>
+    </div>
+</body>
+</html>
