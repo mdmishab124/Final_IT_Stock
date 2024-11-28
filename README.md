@@ -52,27 +52,3 @@ STATIC_ROOT = '/your-server-static-path/'</code></pre>
         <p>Once all configurations are complete, you can start the development server and explore the Django Unfold design:</p>
         <pre><code>python manage.py runserver</code></pre>
 
-
-<h2>Troubleshooting</h2>
-        <ul>
-            <li>
-                <strong>Unfold Design Not Showing:</strong> 
-                Ensure static files are correctly configured and collected as outlined in the 
-                <a href="#static-files-configuration">Static Files Configuration</a> section.
-            </li>
-            <li>
-                <strong>Database Connection Issues:</strong>
-                <ul>
-                    <li>Verify your MySQL credentials and host information in the <code>DATABASES</code> setting.</li>
-                    <li>Ensure the required MySQL libraries (<code>mysql-connector-python</code> and <code>mysqlclient</code>) are installed.</li>
-                </ul>
-            </li>
-        </ul>
-
-
-<h2>License</h2>
-        <p>
-            This project is licensed under the <a href="LICENSE">MIT License</a>. 
-            Feel free to use, modify, and distribute.
-        </p>
-
