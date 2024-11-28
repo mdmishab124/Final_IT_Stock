@@ -8,7 +8,7 @@
 
 <h2>Installation and Setup</h2>
 
-<h3>Step 1: Install Required Dependencies</h3>
+<h3>Step 1: After cloning the project, open it and install the necessary dependencies.</h3>
 <p>To get started, install the following dependencies:</p>
 <pre><code>pip install django-unfold
 pip install mysql-connector-python
