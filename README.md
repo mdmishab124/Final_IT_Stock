@@ -41,7 +41,7 @@ python manage.py migrate
             <code>settings.py</code>:
         </p>
         <pre><code>STATIC_URL = '/static/'
-STATIC_ROOT = '/yourserverstaticpath/'</code></pre>
+STATIC_ROOT = '/your-server-static-path/'</code></pre>
 
 <p>Afterward, collect static files with the following command:</p>
         <pre><code>python manage.py collectstatic</code></pre>
