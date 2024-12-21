@@ -64,3 +64,6 @@ def custom_dashboard_callback(request, context):
     context.update(total_context)
     
     return context
+
+def homepage(request):
+    return render(request, 'home.html')
